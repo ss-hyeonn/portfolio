@@ -1,0 +1,374 @@
+@charset "UTF-8";
+body {
+  font-family: "Paperlogy";
+}
+body h3 {
+  font-weight: 600;
+}
+
+header {
+  font-family: "토스폰트";
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+header #title {
+  float: left;
+  margin: 20px 40px;
+}
+header #gnb {
+  float: right;
+  margin: 20px 40px;
+}
+header #gnb ul {
+  display: flex;
+  gap: 40px;
+}
+header #gnb li {
+  cursor: pointer;
+}
+header #gnb li.active {
+  color: #6d85a0;
+}
+
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main .arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+main .arrow i {
+  font-size: 40px;
+  cursor: pointer;
+}
+main .arrow .hidden {
+  display: none;
+}
+
+@keyframes move {
+  to {
+    bottom: 24px;
+  }
+}
+.mouse {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  animation: move 0.3s alternate infinite;
+}
+
+.container .area {
+  width: 100%;
+  height: 100vh;
+}
+.container #main {
+  background: url(../images/intro_2_2.png) no-repeat center center;
+  background-size: cover;
+}
+.container #about {
+  background: #f9f7f7;
+}
+.container #works {
+  background: #f9f7f7;
+}
+.container #contact {
+  background: url(../images/contack._2png.png) no-repeat center center;
+  background-size: cover;
+}
+
+main .pager {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+main .pager span {
+  display: block;
+  margin: 8px 0;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+}
+main .pager span.active {
+  opacity: 1;
+}
+
+#about .inner {
+  width: 90%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#about .inner h2 {
+  font-size: 35px;
+}
+#about .inner h3 {
+  font-size: 1.8em;
+  margin-bottom: 7%;
+}
+#about .inner li {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+#about .inner li span {
+  font-size: 16px;
+}
+#about .me li {
+  line-height: 2em;
+}
+#about .me li:nth-child(2) {
+  font-size: 1.5em;
+}
+#about .photo p {
+  width: 60%;
+  margin: 0 auto; /* 추가적인 수평 중앙 정렬 */
+}
+#about .photo img {
+  width: 100%;
+  border-radius: 150px 150px;
+}
+#about .skills {
+  display: flex;
+  flex-direction: column;
+}
+#about .skills ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+#about .skills ul li {
+  width: 12%;
+  height: 100%;
+}
+#about .skills ul li img {
+  width: 100%;
+  height: 100%;
+}
+#about .list {
+  width: 100%;
+}
+#about .item {
+  width: 100%;
+  height: 100%;
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+}
+#about img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#works {
+  height: 50%;
+}
+#works .inner {
+  width: 90%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#works .list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 90%;
+}
+#works .item {
+  width: 50%;
+}
+#works .box {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#works .img img {
+  width: 100%;
+  margin-bottom: 10%;
+}
+#works h3 {
+  font-size: 1.2em;
+  padding-left: 40px;
+}
+#works .desc {
+  font-size: 1em;
+  padding-left: 40px;
+  margin: 20px 0 40px;
+}
+#works .link {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+#works .link a {
+  display: block;
+  border-radius: 20px;
+  background: #111;
+  padding: 16px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+#works .link li.git a {
+  padding: 8px 8px;
+}
+#works .link:hover a {
+  background: #6e91a9;
+  transition: all 0.4s;
+  transform: translateY(15%);
+}
+#works .type2 .img {
+  float: left;
+  width: 70%;
+}
+#works .type2 h3 {
+  clear: both;
+}
+#works .type2 .link {
+  width: 28%;
+  float: right;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+  padding-top: 10px;
+  clear: both;
+  margin-right: 5%;
+  margin-top: -200px;
+}
+#works .type2 .link li {
+  margin-bottom: 10px;
+}
+#works .type2 .link a {
+  text-align: center;
+  height: auto;
+  line-height: 1.4;
+  padding: 20px;
+}
+#works .type2 .link i {
+  font-size: 40px;
+}
+
+#contact .inner {
+  position: relative;
+  width: 85%;
+  height: calc(100% - 56px);
+  padding-top: 56px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .text {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  color: #fff;
+  line-height: 2em;
+}
+#contact .text .title {
+  font-size: 33px;
+  font-weight: 600;
+}
+#contact .text span {
+  font-size: 1.4em;
+}
+#contact .contact_text_t {
+  margin-bottom: 5%;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.7333333333);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#modal.active {
+  display: flex;
+}
+#modal #modal_inner {
+  width: 80%;
+  height: 84%;
+  background: #fff;
+  border: 10px solid #fff;
+  border-radius: 12px;
+}
+#modal .close_modal {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+#modal iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #gnb ul {
+    gap: 20px;
+  }
+  #about .inner {
+    flex-direction: column;
+  }
+  #about .photo {
+    width: 100%;
+  }
+  #works .list {
+    flex-direction: column;
+  }
+  #works .item {
+    width: 100%;
+    height: 100%;
+  }
+  #works .item .img img {
+    width: 100%;
+    height: 100%;
+  }
+  #contact .text {
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  #contact .text span {
+    font-size: 1.2em;
+  }
+  #contact .text .contact_text_t {
+    margin-bottom: 10%;
+  }
+  .mouse {
+    bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
