@@ -60,13 +60,17 @@ main .pager{
     	align-items: center;
 		h2{font-size: 35px;}
 		h3{font-size: 1.8em; margin-bottom: 7%;}
-		li{font-size: 1em; line-height: 1.5em; font-weight: 500;
+		li{font-size: 1em; line-height: 1.55em; font-weight: 500;
 		span{font-size: 16px;}}}
-	.me li{line-height: 2em;}
+	.start_line{display: flex;}
+	.me ul{margin: 5% 16% 0;}	
+	.me li{line-height: 2em;
+		span{font-weight: 600;}}
 	.me li:nth-child(2){font-size:1.5em;}	
+	.edu_license{gap: 220px;}
 	.photo{
 		
-		p{width:60%;
+		p{width:40%;
 			margin: 0 auto; /* 추가적인 수평 중앙 정렬 */
 }
 		img{width: 100%; 
@@ -81,7 +85,7 @@ main .pager{
 		}
 	}
 	.list{width: 100%;}
-	.item{width:100%; height:100%; gap: 100px;
+	.item{width:100%; height:100%;
 		display:flex; flex-direction: column;}
 		
 	img{width:100%; height:100%; object-fit:contain;}
@@ -146,15 +150,4 @@ main .pager{
 }//end:modal
 
 
-@media screen and (max-width: 768px){
-	#gnb{ul{gap:20px;}}
-	#about .inner{flex-direction:column;}
-	#about .photo{width:100%;}
-	#works .list{flex-direction:column;}
-	#works .item{width:100%; height:100%;}
-	#works .item .img img{width:100%; height:100%;}
-	#contact .text{width:100%; font-size:1.2em; line-height: 1.5em;}
-	#contact .text span{font-size:1.2em;}
-	#contact .text .contact_text_t{margin-bottom: 10%;}
-	.mouse{bottom:10px;}
-}
+
