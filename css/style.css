@@ -147,6 +147,9 @@ main .pager span.active {
 #about .edu_license {
   gap: 220px;
 }
+#about .eduli_in {
+  margin: 0 15%;
+}
 #about .photo p {
   width: 40%;
   margin: 0 auto; /* 추가적인 수평 중앙 정렬 */
