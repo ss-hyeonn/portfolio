@@ -248,7 +248,7 @@ main .pager span.active {
 #works .link li.git a {
   padding: 8px 8px;
 }
-#works .link:hover a {
+#works .link li:hover a {
   background: #6e91a9;
   transition: all 0.4s;
   transform: translateY(15%);

@@ -110,10 +110,11 @@ main .pager{
 			text-decoration:none;}
 
 		li.git a{padding:8px 8px;}
-	}
-	.link:hover a{background:#6e91a9;
-			transition:all .4s;
+		li:hover a{background:#6e91a9;
+			transition:all .5s ease-in-out;
 			transform: translateY(15%);}
+	}
+	
 	.type2{
 		.img{float:left; width:70%;}
 		h3{clear:both;}
