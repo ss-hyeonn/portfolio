@@ -131,9 +131,10 @@ main .pager span.active {
 }
 #about .start_line {
   display: flex;
+  width: 90%;
 }
 #about .me ul {
-  margin: 5% 16% 0;
+  margin-top: 8%;
 }
 #about .me li {
   line-height: 2em;
@@ -148,11 +149,11 @@ main .pager span.active {
   gap: 220px;
 }
 #about .eduli_in {
-  margin: 0 15%;
+  margin-left: 8%;
 }
 #about .photo p {
-  width: 40%;
-  margin: 0 auto; /* 추가적인 수평 중앙 정렬 */
+  width: 45%;
+  margin: 0 0 0 20%;
 }
 #about .photo img {
   width: 100%;

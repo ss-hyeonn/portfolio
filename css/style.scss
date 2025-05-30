@@ -62,17 +62,18 @@ main .pager{
 		h3{font-size: 1.8em; margin-bottom: 7%;}
 		li{font-size: 1em; line-height: 1.55em; font-weight: 500;
 		span{font-size: 16px;}}}
-	.start_line{display: flex;}
-	.me ul{margin: 5% 16% 0;}	
+	.start_line{display: flex; width:90%;}
+	.me ul{margin-top: 8%;}
 	.me li{line-height: 2em;
 		span{font-weight: 600;}}
+		
 	.me li:nth-child(2){font-size:1.5em;}	
 	.edu_license{gap: 220px;}
-	.eduli_in{margin: 0 15%;}
+	.eduli_in{margin-left: 8%}
 	.photo{
 		
-		p{width:40%;
-			margin: 0 auto; /* 추가적인 수평 중앙 정렬 */
+		p{width:45%;
+			margin: 0 0 0 20%;
 }
 		img{width: 100%; 
 			border-radius:150px 150px;}	
